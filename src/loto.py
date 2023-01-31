@@ -1,7 +1,5 @@
 import random
-loto = []
-for i in range(1, 50):
-    loto.append(i)
+loto = list(range(1, 50))
 
 to_choose = []
 
