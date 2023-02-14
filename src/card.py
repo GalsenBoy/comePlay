@@ -1,8 +1,12 @@
 import random
-colors = ["Spade ", "Clover", "Square", "Heart"]
+color = [" ♠ ", "♣", " ♥", "♦"]
 
-card = [7, 8, 9, 10, "K", "Q", "J", "A"]
+value = [7, 8, 9, 10, "K", "Q", "J", "A"]
 
-cards = (card * 4)
-random.shuffle(cards)
-print(cards)
+game_one = (value * 4)
+game_two = (color * 7)
+random.shuffle(game_one)
+random.shuffle(game_two)
+game = zip(game_one, game_two)
+
+print(tuple(game))
